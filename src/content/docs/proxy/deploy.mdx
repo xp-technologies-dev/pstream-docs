@@ -14,7 +14,7 @@ Please use the extension instead unless you are familiar with self hosting Docke
 :::caution
 **Selfhosting the client as well?**
 
-Please read [THIS](/mov-docs/proxy/introduction) and use Method 1 (Docker) or Method 2 (Manual)!
+Please read [THIS](/pstream-docs/proxy/introduction) and use Method 1 (Docker) or Method 2 (Manual)!
 
 Cloudflare and Netlify's IPs are blocked by most sites and the proxy MUST be hosted on a VPS or other server that is not IP/ASN banned.
 :::
@@ -33,17 +33,17 @@ P-Stream does not have a Docker image for the proxy, but there is a Dockerfile w
 
 <Steps>
 1. Clone the repo on your server:
-   `git clone https://github.com/okikio/mov-proxy`
+   `git clone https://github.com/xp-technologies-dev/simple-proxy`
 
 2. Locate the `Dockerfile` in the root folder.
 
 3. Build the Docker image:
-   `docker build -t mov-proxy ./mov-proxy`
+   `docker build -t simple-proxy ./simple-proxy`
 
-4. (Optional) Create and edit a `.env` file in the `mov-proxy` directory to configure secrets such as `JWT_SECRET` and other environment variables as documented in the configuration guide.
+4. (Optional) Create and edit a `.env` file in the `simple-proxy` directory to configure secrets such as `JWT_SECRET` and other environment variables as documented in the configuration guide.
 
 5. Run the Docker container (replace values as needed):
-   `docker run -d --name mov-proxy -p 3000:3000 --env-file .env mov-proxy`
+   `docker run -d --name simple-proxy -p 3000:3000 --env-file .env simple-proxy`
 
 6. (Optional) Configure your firewall or reverse proxy (such as NGINX or Caddy) to expose port `3000` or your desired HTTP/HTTPS port.
 </Steps>
@@ -57,9 +57,9 @@ This method is for advanced users who want full control over their deployment. W
 Manually installing the proxy on your server. You may want to use an automated package manager like nixpacks to do this.
 
 <Steps>
-1. Clone the repo on your server `git clone https://github.com/okikio/mov-proxy`
+1. Clone the repo on your server `git clone https://github.com/xp-technologies-dev/simple-proxy`
 
-2. Navigate to the directory `cd mov-proxy`
+2. Navigate to the directory `cd simple-proxy`
 
 3. Install packages `pnpm i`
 
@@ -82,7 +82,7 @@ You'll need to configure port forwarding and firewall settings. Good luck.
 
 Cloudflare has a generous free plan, so you don't need to pay anything unless you get thousands of users.
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/okikio/mov-proxy)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/xp-technologies-dev/simple-proxy)
 
 <Steps>
 1. Create a GitHub account at https://github.com if you don't have one.
@@ -105,14 +105,14 @@ Cloudflare has a generous free plan, so you don't need to pay anything unless yo
    -> Proxy.
 
 8. Use the URL you took note of and [set up a custom proxy in the
-   client](/mov-docs/extra/streaming#method-1-self-hosted-proxy).
+   client](/pstream-docs/extra/streaming#method-1-self-hosted-proxy).
 </Steps>
 
 ## Method 4 - Netlify (DEPRECATED)
 
 Netlify has a very generous free plan, so you'll be able to host your proxy for free unless you get hundreds of users.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/okikio/mov-proxy)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/xp-technologies-dev/simple-proxy)
 
 <Steps>
 1. Create a GitHub account at https://github.com/signup if you don't have one already.
@@ -127,7 +127,7 @@ Netlify has a very generous free plan, so you'll be able to host your proxy for 
 
 5. Click on the only site in the `Sites` section of your dashboard.
 
-6. Find the link of your site near the top of the page, it should look something like `https://<random-words>.netlify.app`. Right click the link, click `Copy link address`. [Now you'll just have to set up the client](/mov-docs/extra/streaming#method-1-self-hosted-proxy)!
+6. Find the link of your site near the top of the page, it should look something like `https://<random-words>.netlify.app`. Right click the link, click `Copy link address`. [Now you'll just have to set up the client](/pstream-docs/extra/streaming#method-1-self-hosted-proxy)!
 </Steps>
 
 ## Method 5 - Railway (DEPRECATED)
@@ -151,5 +151,5 @@ Railway provides $5 in free credits once you verify your account. These credits 
 
 5. Once the proxy has deployed, copy the URL from the `Deployments` page.
 
-6. Congratulations! You have deployed the proxy, [you can now set up the client](/mov-docs/extra/streaming#method-1-self-hosted-proxy).
+6. Congratulations! You have deployed the proxy, [you can now set up the client](/pstream-docs/extra/streaming#method-1-self-hosted-proxy).
 </Steps>
