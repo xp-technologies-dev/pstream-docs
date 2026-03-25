@@ -15,8 +15,8 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 
 # Build-time configuration (override via docker-compose build.args or --build-arg)
-ARG SITE_URL=https://okikio.github.io
-ARG BASE_PATH=/mov-docs
+ARG SITE_URL=https://xp-technologies-dev.github.io
+ARG BASE_PATH=/pstream-docs
 ENV SITE_URL=${SITE_URL}
 ENV BASE_PATH=${BASE_PATH}
 

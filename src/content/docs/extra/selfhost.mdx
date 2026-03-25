@@ -44,7 +44,7 @@ import { Steps } from '@astrojs/starlight/components';
 
      p-stream-frontend:
        build:
-         context: https://github.com/p-stream/p-stream.git
+         context: https://github.com/xp-technologies-dev/p-stream.git
          args:
            TMDB_READ_API_KEY: "YourTMDBReadAPIKeyHere"
            CORS_PROXY_URL: "https://cors.example.tld https://second.cors.example.tld"
@@ -61,7 +61,7 @@ import { Steps } from '@astrojs/starlight/components';
        restart: unless-stopped
 
      p-stream-proxy:
-       image: ghcr.io/p-stream/simple-proxy:latest
+       image: ghcr.io/xp-technologies-dev/simple-proxy:latest
        ports:
          - "3000:3000"
        networks:
@@ -76,8 +76,8 @@ import { Steps } from '@astrojs/starlight/components';
    **Important:**
    * Replace `YourPasswordHere` with your secure database password.
    * Generate a strong session secret and replace `32CharacterLongStringHere`.
-   * Replace `TMDBReadAPIKey` with your api key, learn more [here](/mov-docs/client/tmdb).
-   * Replace `YourDomainHere` with whatever you'll be using to access your main site, like `pstream.mov`.
+   * Replace `TMDBReadAPIKey` with your api key, learn more [here](/pstream-docs/client/tmdb).
+   * Replace `YourDomainHere` with whatever you'll be using to access your main site, like `pstream.net`.
    * Replace `meta__name` and `meta__description`.
 
 3. **Start the Backend:** Open a terminal in the directory containing `docker-compose.yml` and execute:

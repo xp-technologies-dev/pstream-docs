@@ -20,8 +20,8 @@ pnpm build
 Build and run with Docker:
 
 ```bash
-docker build -t mov-docs .
-docker run -p 8080:8080 mov-docs
+docker build -t pstream-docs .
+docker run -p 8080:8080 pstream-docs
 ```
 
 Or use Docker Compose:
@@ -36,6 +36,6 @@ The container image is also available at [ghcr.io/okikio/mov-docs](https://ghcr.
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SITE_URL` | `https://okikio.github.io` | The base site URL for the build |
-| `BASE_PATH` | `/mov-docs` | The base path for the site |
+| `SITE_URL` | `https://xp-technologies-dev.github.io` | The base site URL for the build |
+| `BASE_PATH` | `/pstream-docs` | The base path for the site |
 | `PORT` | `8080` | Port for the Docker container |

@@ -36,7 +36,7 @@ window.__CONFIG__ = {
 - Type: `string`
 - Default: `""`
 
-This is the **read** API key from TMDB to allow P-Stream to search for media. [Get one by following our guide](/mov-docs/client/tmdb).
+This is the **read** API key from TMDB to allow P-Stream to search for media. [Get one by following our guide](/pstream-docs/client/tmdb).
 
 :::danger
 **Required. The client will not work properly if this is not configured.**
@@ -48,7 +48,7 @@ This is the **read** API key from TMDB to allow P-Stream to search for media. [G
 - Default: `""`
 - Example: `"https://example1.example.com,https://example2.example.com"`
 
-This is where you put proxy URLs. [Get some by following our guides](/mov-docs/proxy/deploy).
+This is where you put proxy URLs. [Get some by following our guides](/pstream-docs/proxy/deploy).
 
 If left empty, the client onboarding will not provide a "default setup" and the user will have to manually configure their own proxy or use the extension.
 
@@ -65,7 +65,7 @@ You can add multiple Workers by separating them with a comma, they will be load 
 - Default: `""`
 - Example: `"https://example1.example.com,https://example2.example.com"`
 
-**The same proxy as above**, but used to proxy streams. However, it **must** be hosted on a server that is NOT blocked by FlixHQ. See this [explainer](/mov-docs/proxy/introduction).
+**The same proxy as above**, but used to proxy streams. However, it **must** be hosted on a server that is NOT blocked by FlixHQ. See this [explainer](/pstream-docs/proxy/introduction).
 
 If left empty, some streams, notably streams from FlixHQ, WILL NOT work.
 
@@ -184,7 +184,7 @@ The format is `<beforeA>:<afterA>,<beforeB>:<afterB>,...`
 
 The [Turnstile key](https://dash.cloudflare.com/sign-up?to=/:account/turnstile) for Cloudflare captchas. It's used to authenticate requests to proxy workers (or providers API).
 
-[The proxy workers will need to be configured to accept these captcha tokens](/mov-docs/proxy/configuration#turnstile-secret), otherwise it has no effect for security.
+[The proxy workers will need to be configured to accept these captcha tokens](/pstream-docs/proxy/configuration#turnstile-secret), otherwise it has no effect for security.
 
 ## Config reference - Environment Variables Only
 

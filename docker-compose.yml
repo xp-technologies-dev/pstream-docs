@@ -1,4 +1,4 @@
-name: mov-docs
+name: pstream-docs
 
 services:
   docs:
@@ -7,8 +7,8 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        - SITE_URL=${SITE_URL:-https://okikio.github.io}
-        - BASE_PATH=${BASE_PATH:-/mov-docs}
+        - SITE_URL=${SITE_URL:-https://xp-technologies-dev.github.io}
+        - BASE_PATH=${BASE_PATH:-/pstream-docs}
     ports:
       - "${PORT:-8080}:8080"
     restart: unless-stopped
