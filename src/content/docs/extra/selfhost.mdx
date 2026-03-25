@@ -44,7 +44,7 @@ import { Steps } from '@astrojs/starlight/components';
 
      p-stream-frontend:
        build:
-         context: https://github.com/xp-technologies-dev/p-stream.git
+         context: https://github.com/jenish094/p-stream.git
          args:
            TMDB_READ_API_KEY: "YourTMDBReadAPIKeyHere"
            CORS_PROXY_URL: "https://cors.example.tld https://second.cors.example.tld"
@@ -61,7 +61,7 @@ import { Steps } from '@astrojs/starlight/components';
        restart: unless-stopped
 
      p-stream-proxy:
-       image: ghcr.io/xp-technologies-dev/simple-proxy:latest
+       image: ghcr.io/jenish094/simple-proxy:latest
        ports:
          - "3000:3000"
        networks:

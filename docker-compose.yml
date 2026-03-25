@@ -2,12 +2,12 @@ name: pstream-docs
 
 services:
   docs:
-    image: ghcr.io/okikio/mov-docs:latest
+    image: ghcr.io/jenish094/pstream-docs:latest
     build:
       context: .
       dockerfile: Dockerfile
       args:
-        - SITE_URL=${SITE_URL:-https://xp-technologies-dev.github.io}
+        - SITE_URL=${SITE_URL:-https://jenish094.github.io}
         - BASE_PATH=${BASE_PATH:-/pstream-docs}
     ports:
       - "${PORT:-8080}:8080"

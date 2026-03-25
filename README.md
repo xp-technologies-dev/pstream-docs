@@ -30,12 +30,12 @@ Or use Docker Compose:
 docker compose up
 ```
 
-The container image is also available at [ghcr.io/okikio/mov-docs](https://ghcr.io/okikio/mov-docs).
+The container image is also available at [ghcr.io/jenish094/pstream-docs](https://ghcr.io/jenish094/pstream-docs).
 
 ## Environment Variables
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SITE_URL` | `https://xp-technologies-dev` | The base site URL for the build |
+| `SITE_URL` | `https://jenish094.github.io` | The base site URL for the build |
 | `BASE_PATH` | `/pstream-docs` | The base path for the site |
 | `PORT` | `8080` | Port for the Docker container |

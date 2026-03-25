@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 import Icons from 'unplugin-icons/vite';
 
 // Allow site URL and base path to be overridden via environment variables
-const site = process.env.SITE_URL ?? 'https://xp-technologies-dev.github.io';
+const site = process.env.SITE_URL ?? 'https://jenish094.github.io';
 const base = process.env.BASE_PATH ?? '/pstream-docs';
 
 export default defineConfig({
@@ -20,7 +20,7 @@ export default defineConfig({
       },
       favicon: `${base}/favicon.ico`,
       social: [
-        { icon: 'github', label: 'GitHub', href: 'https://github.com/xp-technologies-dev/p-stream' },
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/jenish094/p-stream' },
         { icon: 'discord', label: 'Discord', href: `${base}/links/discord` },
       ],
       sidebar: [
@@ -81,7 +81,7 @@ export default defineConfig({
         Head: './src/components/Head.astro',
       },
       editLink: {
-        baseUrl: 'https://github.com/xp-technologies-dev/pstream-docs/edit/master/',
+        baseUrl: 'https://github.com/jenish094/pstream-docs/edit/master/',
       },
     }),
   ],
