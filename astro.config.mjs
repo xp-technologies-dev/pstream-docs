@@ -5,11 +5,11 @@ import Icons from 'unplugin-icons/vite';
 
 // Allow site URL and base path to be overridden via environment variables
 const site = process.env.SITE_URL ?? 'https://okikio.github.io';
-const base = process.env.BASE_PATH ?? '';
+const base = process.env.BASE_PATH || '/';
 
 export default defineConfig({
   site,
-  base,
+  base: base === '/' ? undefined : base,
   integrations: [
     starlight({
       title: 'P-Stream',
@@ -20,8 +20,8 @@ export default defineConfig({
       },
       favicon: '/favicon.ico',
       social: [
-        { icon: 'github', label: 'GitHub', href: 'https://github.com/p-stream/p-stream' },
-        { icon: 'discord', label: 'Discord', href: `${base}/links/discord` },
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/xp-technologies-dev/p-stream' },
+         { icon: 'discord', label: 'Discord', href: `${base === '/' ? '' : base}/links/discord` },
       ],
       sidebar: [
         {
