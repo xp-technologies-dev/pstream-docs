@@ -35,7 +35,7 @@ import { Steps } from '@astrojs/starlight/components';
 9. In "Build settings" change the "Build command" to `pnpm build` and the "Build
    output directory" to `dist`.
 
-10. Select the `Environment variable` drop down and add the **[required variables](/mov-docs/client/configuration)**.
+10. Select the `Environment variable` drop down and add the **[required variables](/client/configuration)**.
 
 11. Click "Save and Deploy" to watch your new site deploy.
 
@@ -63,8 +63,8 @@ import { Steps } from '@astrojs/starlight/components';
 
 7. Configure the environment variables:
    - `VITE_CORS_PROXY_URL`: Enter your proxy URL here. Make sure to not have a slash at the end of your URL. Example (THIS IS AN EXAMPLE, IT WON'T WORK FOR YOU): `https://test-proxy.test.workers.dev`
-   - `VITE_TMDB_READ_API_KEY`: Enter your TMDB Read Access Token here. Please read [the TMDB page](/mov-docs/client/tmdb) on how to get an API key.
-   - `VITE_BACKEND_URL`: Only set if you have a self-hosted backend. Put in your backend URL. Check out [configuration reference](/mov-docs/client/configuration) for details. Make sure to not have a slash at the end of the URL.
+   - `VITE_TMDB_READ_API_KEY`: Enter your TMDB Read Access Token here. Please read [the TMDB page](/client/tmdb) on how to get an API key.
+   - `VITE_BACKEND_URL`: Only set if you have a self-hosted backend. Put in your backend URL. Check out [configuration reference](/client/configuration) for details. Make sure to not have a slash at the end of the URL.
 
 8. Click "Deploy".
 
@@ -86,9 +86,9 @@ import { Steps } from '@astrojs/starlight/components';
 
 4. Put your proxy URL in-between the double quotes of `VITE_CORS_PROXY_URL: ""`. Make sure to not have a slash at the end of your URL. Example (THIS IS AN EXAMPLE, IT WON'T WORK FOR YOU): `VITE_CORS_PROXY_URL: "https://test-proxy.test.workers.dev"`
 
-5. Put your TMDB Read Access Token inside the quotes of `VITE_TMDB_READ_API_KEY: ""`. Please read [the TMDB page](/mov-docs/client/tmdb) on how to get an API key.
+5. Put your TMDB Read Access Token inside the quotes of `VITE_TMDB_READ_API_KEY: ""`. Please read [the TMDB page](/client/tmdb) on how to get an API key.
 
-6. If you have a self-hosted backend server, enter your URL in the `VITE_BACKEND_URL` variable. Check out [configuration reference](/mov-docs/client/configuration) for details. Make sure to not have a slash at the end of the URL.
+6. If you have a self-hosted backend server, enter your URL in the `VITE_BACKEND_URL` variable. Check out [configuration reference](/client/configuration) for details. Make sure to not have a slash at the end of the URL.
 
 7. Save the file.
 

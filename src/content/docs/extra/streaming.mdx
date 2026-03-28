@@ -9,12 +9,12 @@ This page explains all the different ways you can enable P-Stream to stream your
 
 ## Method 1 - Self-hosted proxy
 
-Self-hosting a proxy is an easy way to get faster streaming speeds, [we have a guide](/mov-docs/proxy/deploy) that explains how to set up one for **free**.
+Self-hosting a proxy is an easy way to get faster streaming speeds, [we have a guide](/proxy/deploy) that explains how to set up one for **free**.
 
 This method is recommended if you want to host a proxy for your friends and or family to use, as it is the faster than using the public proxy and the most reliable way to stream media at the moment.
 
 <Steps>
-1. Set up a proxy using one of our [guides](/mov-docs/proxy/deploy), [though we recommend Docker](/mov-docs/proxy/deploy#method-1-docker-recommended).
+1. Set up a proxy using one of our [guides](/proxy/deploy), [though we recommend Docker](/proxy/deploy#method-1-docker-recommended).
 
 2. Once that's done, go to the **Connections** section of the **Settings page**
    on your P-Stream instance of choice.
@@ -29,7 +29,7 @@ This method is recommended if you want to host a proxy for your friends and or f
 
 :::note
 If you're self-hosting the client, you can use the
-[`VITE_CORS_PROXY_URL`](/mov-docs/client/configuration#vite-cors-proxy-url)
+[`VITE_CORS_PROXY_URL`](/client/configuration#vite-cors-proxy-url)
 variable to set the proxy URL for everyone who uses your client.
 :::
 
@@ -39,4 +39,4 @@ The public proxy is the easiest way to get started with P-Stream as it is the de
 
 If you are using the main website, then you are most likely already using the public proxy. Unfortunately you will most likely be getting slower speeds and your video might be buffering more often, which is why we recommend using a self-hosted proxy if you can.
 
-This is not the case with self-hosted clients, there is no proxy set up by default on self-hosted clients and you will need to [set up one yourself](/mov-docs/proxy/deploy).
+This is not the case with self-hosted clients, there is no proxy set up by default on self-hosted clients and you will need to [set up one yourself](/proxy/deploy).
